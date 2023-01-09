@@ -1,0 +1,190 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Custom Style Starts Here */
+
+/* My resets */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+strong {
+    font-weight: bold;
+}
+/* Variables */
+:root {
+    --primary-bg: #FF7178;
+    --secondary-bg: #5D54A3;
+    --tertiary-bg: #37CC8A;
+    --strong-1: #CD9192;
+}
+
+/* Containers */
+.container-80{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* Flex */
+.flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.justify-center {
+    justify-content: center;
+}
+.align-center {
+    align-items: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.align-strech {
+    align-items: stretch;
+}
+.flex-48 {
+    flex: 0 1 48%;
+}
+
+/* Headings */
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: white;
+}
+
+/* Buttons */
+.form .btn{
+    background-color: var(--tertiary-bg);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    box-shadow: 0 2px 0 0 rgba(13, 77, 13, 0.692);
+    padding: 15px;    
+}
+
+/* Styling Main */
+main {
+    background: linear-gradient(to top, rgba(255, 0, 0, 0.45), rgba(255, 14, 0, 0.45)), 
+    url(../media/bg-intro-desktop.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 100px 0px;
+}
+.article {
+    padding: 30px;
+}
+.article p {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.form-column {
+    padding: 20px;
+}
+.rate-bar {
+    background-color: var(--secondary-bg);
+    padding: 20px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 8px 0 0 rgba(0,0,0,.2);
+    margin-bottom: 25px;
+}
+.form fieldset{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+.form input {
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0,0,0,.2);
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: #505050;
+}
+.form input:focus {
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.9);
+}
+.form input::-webkit-input-placeholder {
+    font-size: 14px;
+    font-weight: 600;
+}
+.terms {
+    font-size: 10px;
+    font-weight: 600;
+    color: rgb(165, 164, 164);
+    padding: 0px 30px;
+}
+.terms strong {
+    color: var(--primary-bg);
+}
