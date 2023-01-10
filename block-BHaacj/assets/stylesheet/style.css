@@ -1,0 +1,188 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* Custom Styling Starts Here */
+
+/* My Resets */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/* Variables */
+:root {
+    --primary-bg: #69C6BA;
+    --secondary-bg: #C66995;
+    --main-bg: #E6E6E6;
+}
+/* General Styles */
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+input {
+    font-family: 'Noto Sans', sans-serif;
+}
+textarea {
+    font-family: 'Noto Sans', sans-serif;
+}
+/* Containers */
+.container-70 {
+    max-width: 70%;
+    margin: 0 auto;
+}
+.container-60 {
+    max-width: 60%;
+    margin: 0 auto;
+}
+/* Flex */
+.flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.align-center {
+    align-items: center;
+}
+.align-strech {
+    align-items: stretch;
+}
+.flex-50 {
+    flex: 0 1 50%;
+}
+.flex-100 {
+    flex: 0 1 100%;
+}
+/* Text */
+.text {
+    font-size: 10px;
+}
+.text-bold {
+    font-weight: 800;
+}
+/* Circle */
+.circle {
+    border-radius: 50%;
+}
+/* Headings */
+h1 {
+    font-size: 32px;
+    font-weight: 400;
+    color: white;
+    margin-top: 50px;
+}
+/* Header Styles Start*/
+.header {
+    padding: 20px 30px;
+}
+.brand-logo {
+    width: 30%;
+    margin-right: 5px;
+}
+.brand-name {
+    font-size: 24px;
+    font-weight: 800;
+}
+.header nav .text {
+    color: black;
+}
+.header nav .home {
+    font-size: 10px;
+    color: var(--primary-bg);
+}
+/* Header Styles End */
+
+/* Main Styles Start */
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url(../media/banner.jpg);
+    background-size: cover;
+    padding: 50px;
+}
+.dots {
+    width: 0.60%;
+    margin: 10px;
+}
+.hero p {
+    color: white;
+    letter-spacing: 0.5px;
+}
+.hero form {
+    width: 70%;
+    margin-top: 100px;
+    background-color: white;
+    padding: 20px;
+}
+.hero input {
+    margin: 10px 0px;
+}
+
+/* Main Styles End */
+
+
+
+
+
+
+
+
+/* Hovering Styles */

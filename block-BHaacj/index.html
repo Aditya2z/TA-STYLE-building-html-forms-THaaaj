@@ -1,0 +1,126 @@
+<!-- - Create a page according to the layout shown below.
+
+![Building HTML forms Assignment level 2](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/building-html-forms/ex-2.png)
+
+- Using CSS resets is necessary.
+
+- Use semantic tags and keep the nesting and indentation proper. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of Page -->
+    <title>Form-2</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/stylesheet/style.css">
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/eec6d21a06.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container-60 flex justify-between align-strech">
+            <div class="brand flex align-center">
+                <figure class="brand-logo">
+                    <img src="./assets/media/logo.png" alt="brand logo">
+                </figure>
+                <strong class="brand-name">JOURNEY</strong>
+            </div>
+            <nav class="flex flex-50">
+                <ul class="flex justify-between align-center flex-100">
+                    <li>
+                        <a href="#" class="text-bold home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text text-bold">Top Destinations</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text text-bold">Recommended Places</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text text-bold">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Main -->
+    <main>
+        <div class="container-70">
+            <!-- Hero -->
+            <section class="hero flex flex-column align-center">
+                <h1>LET'S BEGIN</h1>
+                <figure class="dots">
+                    <img src="./assets/media/dots-3.png" alt="3 white dots">
+                </figure>
+                <p>We assist you to choose the best.</p>
+                <button class="circle">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <form action="index.html" method="post">
+                    <fieldset>
+                        <div class="flex justify-between">
+                            <label class="text text-bold flex flex-column">
+                                Choose Your Destination
+                                <input type="text" placeholder="Type your destination">
+                            </label>
+                            <label class="text text-bold flex flex-column">
+                                How many rooms?
+                                <input type="number" placeholder="1 Room"> 
+                            </label>
+                            <label class="text text-bold flex flex-column">
+                                Adult
+                                <select>
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                </select>
+                            </label>
+                            <label class="text text-bold flex flex-column">
+                                Children
+                                <select>
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="flex">
+                            <label class="flex flex-column text text-bold">
+                                Check In Date
+                                <input type="text" placeholder="Check In">
+                            </label>
+                            <label class="flex flex-column text text-bold">
+                                Check Out Date
+                                <input type="text" placeholder="Check Out">
+                            </label>
+                            <input type="submit" value="CHECK AVAILABILITY">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
