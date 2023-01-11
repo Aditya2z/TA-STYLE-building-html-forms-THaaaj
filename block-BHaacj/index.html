@@ -50,7 +50,7 @@
         </div>
     </header>
     <!-- Main -->
-    <main>
+    <main class="main">
         <div class="container-70">
             <!-- Hero -->
             <section class="hero flex flex-column align-center">
@@ -59,67 +59,119 @@
                     <img src="./assets/media/dots-3.png" alt="3 white dots">
                 </figure>
                 <p>We assist you to choose the best.</p>
-                <button class="circle">
+                <button class="circle btn primary-btn down">
                     <i class="fa-solid fa-chevron-down"></i>
                 </button>
                 <form action="index.html" method="post">
                     <fieldset>
                         <div class="flex justify-between">
-                            <label class="text text-bold flex flex-column">
+                            <label class="text text-bold flex flex-column flex-40">
                                 Choose Your Destination
                                 <input type="text" placeholder="Type your destination">
                             </label>
-                            <label class="text text-bold flex flex-column">
+                            <label class="text text-bold flex flex-column flex-25">
                                 How many rooms?
                                 <input type="number" placeholder="1 Room"> 
                             </label>
-                            <label class="text text-bold flex flex-column">
+                            <label class="text text-bold flex flex-column flex-10">
                                 Adult
-                                <select>
-                                    <option value="1" selected>1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                </select>
+                                <input type="number" placeholder="1" >
                             </label>
-                            <label class="text text-bold flex flex-column">
+                            <label class="text text-bold flex flex-column flex-10">
                                 Children
-                                <select>
-                                    <option value="1" selected>1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                </select>
+                                <input type="number" placeholder="0" >
                             </label>
                         </div>
-                        <div class="flex">
-                            <label class="flex flex-column text text-bold">
+                        <div class="flex justify-between availability">
+                            <label class="flex flex-column text text-bold flex-25">
                                 Check In Date
                                 <input type="text" placeholder="Check In">
                             </label>
-                            <label class="flex flex-column text text-bold">
+                            <label class="flex flex-column text text-bold flex-25">
                                 Check Out Date
                                 <input type="text" placeholder="Check Out">
                             </label>
-                            <input type="submit" value="CHECK AVAILABILITY">
+                            <button class="flex-50 btn primary-btn" disabled>
+                                CHECK AVAILABILITY
+                            </button>
                         </div>
                     </fieldset>
                 </form>
             </section>
+            <!-- Journey -->
+            <section class="journey">
+                <h2>YOUR <strong>JOURNEY</strong> IS OUR PRIORITY</h2>
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, dicta. Fuga accusantium consequuntur dolores repudiandae ex! Repellat expedita vero commodi voluptates.
+                </p>
+                <button class="btn primary-btn">
+                    CONTINUE EXPLORE
+                </button>
+            </section>
+            <!-- Places -->
+            <section class="places">
+                <section class="europe flex align-center justify-between">
+                    <div class="flex flex-50">
+                        <figure class="flex-100">
+                            <img src="./assets/media/tm-img-01.jpg" alt="europe tourism place">
+                        </figure>
+                    </div>
+                    <figure class="previous flex align-center justify-center">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </figure>
+                    <figure class="next flex align-center justify-center">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </figure>
+                    <article class="flex-48">
+                        <h3>Europe's most visited places</h3>
+                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt iure neque dicta sit aliquam, beatae fugiat vitae recusandae fuga dolor, numquam facilis sint magnam officia non quod dolorem, doloremque ex!</p>
+                        <button class="btn inverted-primary-btn">
+                            CONTINUE READING
+                        </button>
+                    </article>
+                </section>
+                <section class="asia flex align-center justify-between">
+                    <article class="flex-48">
+                        <h3>Asia's most popular places</h3>
+                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt iure neque dicta sit aliquam, beatae fugiat vitae recusandae fuga dolor, numquam facilis sint magnam officia non quod dolorem, doloremque ex!</p>
+                        <button class="btn inverted-primary-btn">
+                            CONTINUE READING
+                        </button>
+                    </article>
+                    <figure class="previous flex align-center justify-center">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </figure>
+                    <figure class="next flex align-center justify-center">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </figure>
+                    <div class="flex flex-50">
+                        <figure class="flex-100">
+                            <img src="./assets/media/tm-img-02.jpg" alt="asia tourism place">
+                        </figure>
+                    </div>
+                </section>
+                <section class="europe flex align-center justify-between">
+                    <div class="flex flex-50">
+                        <figure class="flex-100">
+                            <img src="./assets/media/tm-img-03.jpg" alt="america tourism place">
+                        </figure>
+                    </div>
+                    <figure class="previous flex align-center justify-center">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </figure>
+                    <figure class="next flex align-center justify-center">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </figure>
+                    <article class="flex-48">
+                        <h3>America's most famous places</h3>
+                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt iure neque dicta sit aliquam, beatae fugiat vitae recusandae fuga dolor, numquam facilis sint magnam officia non quod dolorem, doloremque ex!</p>
+                        <button class="btn inverted-primary-btn">
+                            CONTINUE READING
+                        </button>
+                    </article>
+                </section>
+            </section>
+            <!--  -->
         </div>
     </main>
 </body>
