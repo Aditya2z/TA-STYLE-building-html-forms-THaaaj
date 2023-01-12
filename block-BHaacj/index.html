@@ -1,0 +1,341 @@
+<!-- - Create a page according to the layout shown below.
+
+![Building HTML forms Assignment level 2](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/building-html-forms/ex-2.png)
+
+- Using CSS resets is necessary.
+
+- Use semantic tags and keep the nesting and indentation proper. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of Page -->
+    <title>Form-2</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/stylesheet/style.css">
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/eec6d21a06.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container-60 flex justify-between align-strech">
+            <div class="brand flex align-center">
+                <figure class="brand-logo">
+                    <img src="./assets/media/logo.png" alt="brand logo">
+                </figure>
+                <strong class="brand-name">JOURNEY</strong>
+            </div>
+            <nav class="flex flex-50">
+                <ul class="flex justify-between align-center flex-100">
+                    <li>
+                        <a href="#" class="text-bold home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text text-bold">Top Destinations</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text text-bold">Recommended Places</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text text-bold">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Main -->
+    <main class="main">
+        <div class="container-70">
+            <!-- Hero -->
+            <section class="hero flex flex-column align-center">
+                <h1>LET'S BEGIN</h1>
+                <figure class="dots">
+                    <img src="./assets/media/dots-3.png" alt="3 white dots">
+                </figure>
+                <p>We assist you to choose the best.</p>
+                <button class="circle btn primary-btn down">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <form action="index.html" method="post">
+                    <fieldset>
+                        <div class="flex justify-between">
+                            <label class="text text-bold flex flex-column flex-40">
+                                Choose Your Destination
+                                <input type="text" placeholder="Type your destination">
+                            </label>
+                            <label class="text text-bold flex flex-column flex-25">
+                                How many rooms?
+                                <input type="number" placeholder="1 Room"> 
+                            </label>
+                            <label class="text text-bold flex flex-column flex-10">
+                                Adult
+                                <input type="number" placeholder="1" >
+                            </label>
+                            <label class="text text-bold flex flex-column flex-10">
+                                Children
+                                <input type="number" placeholder="0" >
+                            </label>
+                        </div>
+                        <div class="flex justify-between availability">
+                            <label class="flex flex-column text text-bold flex-25">
+                                Check In Date
+                                <input type="text" placeholder="Check In">
+                            </label>
+                            <label class="flex flex-column text text-bold flex-25">
+                                Check Out Date
+                                <input type="text" placeholder="Check Out">
+                            </label>
+                            <button class="flex-50 btn primary-btn" disabled>
+                                CHECK AVAILABILITY
+                            </button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+            <!-- Journey -->
+            <section class="journey">
+                <h2>YOUR <strong>JOURNEY</strong> IS OUR PRIORITY</h2>
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, dicta. Fuga accusantium consequuntur dolores repudiandae ex! Repellat expedita vero commodi voluptates.
+                </p>
+                <button class="btn primary-btn">
+                    CONTINUE EXPLORE
+                </button>
+            </section>
+            <!-- Places -->
+            <section class="places">
+                <section class="europe flex align-center justify-between">
+                    <div class="flex flex-50">
+                        <figure class="flex-100">
+                            <img src="./assets/media/tm-img-01.jpg" alt="europe tourism place">
+                        </figure>
+                    </div>
+                    <figure class="previous flex align-center justify-center">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </figure>
+                    <figure class="next flex align-center justify-center">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </figure>
+                    <article class="flex-48">
+                        <h3>Europe's most visited places</h3>
+                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt iure neque dicta sit aliquam, beatae fugiat vitae recusandae fuga dolor, numquam facilis sint magnam officia non quod dolorem, doloremque ex!</p>
+                        <button class="btn inverted-primary-btn">
+                            CONTINUE READING
+                        </button>
+                    </article>
+                </section>
+                <section class="asia flex align-center justify-between">
+                    <article class="flex-48">
+                        <h3>Asia's most popular places</h3>
+                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt iure neque dicta sit aliquam, beatae fugiat vitae recusandae fuga dolor, numquam facilis sint magnam officia non quod dolorem, doloremque ex!</p>
+                        <button class="btn inverted-primary-btn">
+                            CONTINUE READING
+                        </button>
+                    </article>
+                    <figure class="previous flex align-center justify-center">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </figure>
+                    <figure class="next flex align-center justify-center">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </figure>
+                    <div class="flex flex-50">
+                        <figure class="flex-100">
+                            <img src="./assets/media/tm-img-02.jpg" alt="asia tourism place">
+                        </figure>
+                    </div>
+                </section>
+                <section class="europe flex align-center justify-between">
+                    <div class="flex flex-50">
+                        <figure class="flex-100">
+                            <img src="./assets/media/tm-img-03.jpg" alt="america tourism place">
+                        </figure>
+                    </div>
+                    <figure class="previous flex align-center justify-center">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </figure>
+                    <figure class="next flex align-center justify-center">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </figure>
+                    <article class="flex-48">
+                        <h3>America's most famous places</h3>
+                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt iure neque dicta sit aliquam, beatae fugiat vitae recusandae fuga dolor, numquam facilis sint magnam officia non quod dolorem, doloremque ex!</p>
+                        <button class="btn inverted-primary-btn">
+                            CONTINUE READING
+                        </button>
+                    </article>
+                </section>
+            </section>
+            <!-- Continents -->
+            <section class="continents">
+                <div class="continent-strip flex justify-between">
+                    <div>
+                        <figure>
+                            <img src="./assets/media/north-america.png">
+                        </figure>
+                        <figcaption>NORTH AMERICA</figcaption>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="./assets/media/south-america.png">
+                        </figure>
+                        <figcaption>SOUTH AMERICA</figcaption>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="./assets/media/europe.png">
+                        </figure>
+                        <figcaption>EUROPE</figcaption>
+                    </div>>
+                    <div  class="active">
+                        <figure>
+                            <img src="./assets/media/asia.png">
+                        </figure>
+                        <figcaption>ASIA</figcaption>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="./assets/media/africa.png">
+                        </figure>
+                        <figcaption>AFRICA</figcaption>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="./assets/media/australia.png">
+                        </figure>
+                        <figcaption>AUSTRALIA</figcaption>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="./assets/media/antartica.png">
+                        </figure>
+                        <figcaption>ANTRATICA</figcaption>
+                    </div>
+                </div>
+                <div class="price-container">
+                    <section class="price-tag flex">
+                        <figure class="image flex-30">
+                            <img src="./assets/media/tm-img-06.jpg" alt="asian beach">
+                        </figure>
+                        <article class="flex-50">
+                            <h4>ASIA RESORT HOTEL</h4>
+                            <p class="text text-bold city">Singapore</p>
+                            <p class="text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore earum atque ad tenetur sint voluptatibus, ipsam non.
+                            </p>
+                        </article>
+                        <figure class="curve">
+                            <img src="./assets/media/button-curve.png">
+                        </figure>
+                        <aside class="price flex flex-column align-center justify-center flex-20">
+                           <p>
+                            <strong>$440</strong>
+                           </p>
+                           <p class="text">CONTINUE READING</p>
+                        </aside>
+                    </section>
+                    <section class="price-tag flex">
+                        <figure class="image flex-30">
+                            <img src="./assets/media/tm-img-07.jpg" alt="bridge pic">
+                        </figure>
+                        <article class="flex-50">
+                            <h4>NULLAM A SHDU YTRJ</h4>
+                            <p class="text text-bold city">Yangon, Myanmar</p>
+                            <p class="text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore earum atque ad tenetur sint voluptatibus, ipsam non.
+                            </p>
+                        </article>
+                        <figure class="curve">
+                            <img src="./assets/media/button-curve.png">
+                        </figure>
+                        <aside class="price flex flex-column align-center justify-center flex-20">
+                           <p>
+                            <strong>$450</strong>
+                           </p>
+                           <p class="text">CONTINUE READING</p>
+                        </aside>
+                    </section>
+                    <section class="price-tag flex">
+                        <figure class="image flex-30">
+                            <img src="./assets/media/tm-img-05.jpg" alt="bridge lamps">
+                        </figure>
+                        <article class="flex-50">
+                            <h4>HUDBAG SDK MSKOEH</h4>
+                            <p class="text text-bold city">Bangkok, Thailand</p>
+                            <p class="text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore earum atque ad tenetur sint voluptatibus, ipsam non.
+                            </p>
+                        </article>
+                        <figure class="curve">
+                            <img src="./assets/media/button-curve.png">
+                        </figure>
+                        <aside class="price flex flex-column align-center justify-center flex-20">
+                           <p>
+                            <strong>$460</strong>
+                           </p>
+                           <p class="text">CONTINUE READING</p>
+                        </aside>
+                    </section>
+                    <section class="price-tag flex">
+                        <figure class="image flex-30">
+                            <img src="./assets/media/tm-img-04.jpg" alt="pic">
+                        </figure>
+                        <article class="flex-50">
+                            <h4>FALANA HOTEL</h4>
+                            <p class="text text-bold city">Laos</p>
+                            <p class="text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore earum atque ad tenetur sint voluptatibus, ipsam non.
+                            </p>
+                        </article>
+                        <figure class="curve">
+                            <img src="./assets/media/button-curve.png">
+                        </figure>
+                        <aside class="price flex flex-column align-center justify-center flex-20">
+                           <p>
+                            <strong>$540</strong>
+                           </p>
+                           <p class="text">CONTINUE READING</p>
+                        </aside>
+                    </section>
+                    <section class="btn-holder">
+                        <button class="btn primary-btn">
+                            SHOW MORE PLACES
+                        </button>
+                    </section>
+                </div>
+            </section>
+            <!-- Contact -->
+            <section class="contact">
+                <figure class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57564.238571563554!2d85.06735543125!3d25.612727000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed58429528a9f1%3A0x7dc52c62fffa32a2!2sBudhha%20Smriti%20Park%2C%20Patna!5e0!3m2!1sen!2sin!4v1673505969574!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="map-overlay"></div>
+                </figure>
+                <form action="index.html" method="post">
+                    <fieldset class="flex flex-column align-strech justify-between">
+                        <div class="flex justify-between name">
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <input type="text" placeholder="Subject">
+                        <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+                        <button class="btn primary-btn text-bold" disabled>
+                            SEND MESSAGE NOW
+                        </button>
+                    </fieldset>
+                </form>
+            </section>
+            <!-- Footer -->
+            <footer class="footer">
+                <small class="text">
+                    Copyright &copy; Your Company. Designed by Template.Mo
+                </small>
+            </footer>
+        </div>
+    </main>
+</body>
+</html>
